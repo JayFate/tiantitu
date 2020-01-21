@@ -1,0 +1,2920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>parseTable</title>
+</head>
+
+<body>
+    <table width="100%" border="0" cellpadding="1" cellspacing="1">
+        <thead>
+            <tr class="font_16 font_center font_bold color_blue">
+                <td bgcolor="#D0E8FD">处理器型号</td>
+                <td bgcolor="#D0E8FD">核心架构</td>
+                <td valign="middle" bgcolor="#D0E8FD">制造工艺(nm)</td>
+                <td bgcolor="#D0E8FD">核心/线程</td>
+                <td bgcolor="#D0E8FD">核心频率（GHz）</td>
+                <td valign="middle" bgcolor="#D0E8FD">加速频率（GHz）</td>
+                <td bgcolor="#D0E8FD">三级缓存（MB）</td>
+                <td bgcolor="#D0E8FD">核显</td>
+                <td align="center" bgcolor="#D0E8FD">热设计功耗（W）</td>
+                <td bgcolor="#D0E8FD">插槽</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tr1">
+                <td><strong>十代酷睿系列</strong><a name="10thcore" id="haswell6"></a></td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-10980XE</td>
+                <td>Cascade Lake-X</td>
+                <td align="right">14nm</td>
+                <td>18/36</td>
+                <td align="right">3.0</td>
+                <td align="right">4.8</td>
+                <td>24.75</td>
+                <td>NA</td>
+                <td align="right">165</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-10940X</td>
+                <td>Cascade Lake-X</td>
+                <td align="right">14nm</td>
+                <td>14/28</td>
+                <td align="right">3.3</td>
+                <td align="right">4.8</td>
+                <td>19.25</td>
+                <td>NA</td>
+                <td align="right">165</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-10920X</td>
+                <td>Cascade Lake-X</td>
+                <td align="right">14nm</td>
+                <td>12/24</td>
+                <td align="right">3.5</td>
+                <td align="right">4.8</td>
+                <td>19.25</td>
+                <td>NA</td>
+                <td align="right">165</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-10900X</td>
+                <td>Cascade Lake-X</td>
+                <td align="right">14nm</td>
+                <td>10/20</td>
+                <td align="right">3.7</td>
+                <td align="right">4.7</td>
+                <td>19.25</td>
+                <td>NA</td>
+                <td align="right">165</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr class="tr1">
+                <td><strong>Coffee Lake-Refresh九代酷睿系列</strong><a name="cfl-r" id="haswell5"></a></td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-9900KS</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td>8/16</td>
+                <td align="right">5.0</td>
+                <td align="right">5.0</td>
+                <td>16</td>
+                <td>UHD 630 350-1200MHz</td>
+                <td align="right">127</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-9900K</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td>8/16</td>
+                <td align="right">3.6</td>
+                <td align="right">5.0</td>
+                <td>16</td>
+                <td>UHD 630 350-1200MHz</td>
+                <td align="right">95</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-9900KF</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td>8/16</td>
+                <td align="right">3.6</td>
+                <td align="right">5.0</td>
+                <td>16</td>
+                <td>NA</td>
+                <td align="right">95</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-9900</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td>8/16</td>
+                <td align="right">3.1</td>
+                <td align="right">5.0</td>
+                <td>16</td>
+                <td>UHD 630 350-1200MHz</td>
+                <td align="right">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-9900T</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td>8/16</td>
+                <td align="right">2.1</td>
+                <td align="right">4.4</td>
+                <td>16</td>
+                <td>UHD 630 350-1200MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i7-9700K</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td>8/8</td>
+                <td align="right">3.5</td>
+                <td align="right">4.9</td>
+                <td>12</td>
+                <td>UHD 630 350-1200MHz</td>
+                <td align="right">95</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i7-9700KF</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td>8/8</td>
+                <td align="right">3.5</td>
+                <td align="right">4.9</td>
+                <td>12</td>
+                <td>NA</td>
+                <td align="right">95</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i7-9700</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td>8/8</td>
+                <td align="right">3.0</td>
+                <td align="right">4.7</td>
+                <td>12</td>
+                <td>UHD 630 350-1200MHz</td>
+                <td align="right">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i7-9700F</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td>8/8</td>
+                <td align="right">3.0</td>
+                <td align="right">4.7</td>
+                <td>12</td>
+                <td>NA</td>
+                <td align="right">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i7-9700T</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td>8/8</td>
+                <td align="right">2.0</td>
+                <td align="right">4.3</td>
+                <td>12</td>
+                <td>UHD 630 350-1200MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-9600K</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td>6/6</td>
+                <td align="right">3.7</td>
+                <td align="right">4.6</td>
+                <td>9</td>
+                <td>UHD 630 350-1150MHz</td>
+                <td align="right">95</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-9600KF</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td>6/6</td>
+                <td align="right">3.7</td>
+                <td align="right">4.6</td>
+                <td>9</td>
+                <td>NA</td>
+                <td align="right">95</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-9600</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td>6/6</td>
+                <td height="57">3.1</td>
+                <td height="57">4.6</td>
+                <td height="57">9</td>
+                <td height="57">UHD 630 350-1150MHz</td>
+                <td height="57">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-9600T</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td>6/6</td>
+                <td height="57">2.3</td>
+                <td height="57">3.9</td>
+                <td height="57">9</td>
+                <td height="57">UHD 630 350-1150MHz</td>
+                <td height="57">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-9500</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td>6/6</td>
+                <td height="57">3.0</td>
+                <td height="57">4.4</td>
+                <td height="57">9</td>
+                <td height="57">UHD 630 350-1100MHz</td>
+                <td height="57">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-9500F</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td>6/6</td>
+                <td height="57">3.0</td>
+                <td height="57">4.4</td>
+                <td height="57">9</td>
+                <td height="57">NA</td>
+                <td height="57">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-9500T</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">6/6</td>
+                <td height="57">2.2</td>
+                <td height="57">3.7</td>
+                <td height="57">9</td>
+                <td height="57">UHD 630 350-1100MHz</td>
+                <td height="57">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-9400</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">6/6</td>
+                <td height="57">2.9</td>
+                <td height="57">4.1</td>
+                <td height="57">9</td>
+                <td height="57">UHD 630 350-1050MHz</td>
+                <td height="57">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-9400F</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">6/6</td>
+                <td height="57">2.9</td>
+                <td height="57">4.1</td>
+                <td height="57">9</td>
+                <td height="57">NA</td>
+                <td height="57">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-9400T</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">6/6</td>
+                <td height="57">1.8</td>
+                <td height="57">3.4</td>
+                <td height="57">9</td>
+                <td height="57">UHD 630 350-1050MHz</td>
+                <td height="57">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-9350K</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">4/4</td>
+                <td height="57">4.0</td>
+                <td height="57">4.6</td>
+                <td height="57">8</td>
+                <td height="57">UHD 630 350-1150MHz</td>
+                <td height="57">91</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-9350KF</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">4/4</td>
+                <td height="57">4.0</td>
+                <td height="57">4.6</td>
+                <td height="57">8</td>
+                <td height="57">NA</td>
+                <td height="57">91</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-9320</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">4/4</td>
+                <td height="57">3.7</td>
+                <td height="57">4.4</td>
+                <td height="57">8</td>
+                <td height="57">UHD 630 350-1150MHz</td>
+                <td height="57">62</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-9300</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">4/4</td>
+                <td height="57">3.7</td>
+                <td height="57">4.3</td>
+                <td height="57">8</td>
+                <td height="57">UHD 630 350-1150MHz</td>
+                <td height="57">62</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-9300T</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">4/4</td>
+                <td height="57">3.2</td>
+                <td height="57">3.8</td>
+                <td height="57">8</td>
+                <td height="57">UHD 630 350-1100MHz</td>
+                <td height="57">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-9100</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">4/4</td>
+                <td height="57">3.6</td>
+                <td height="57">4.2</td>
+                <td height="57">6</td>
+                <td height="57">UHD 630 350-1100MHz</td>
+                <td height="57">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-9100F</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">4/4</td>
+                <td height="57">3.6</td>
+                <td height="57">4.2</td>
+                <td height="57">6</td>
+                <td height="57">NA</td>
+                <td height="57">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-9100T</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">4/4</td>
+                <td height="57">3.1</td>
+                <td height="57">3.7</td>
+                <td height="57">6</td>
+                <td height="57">UHD 630 350-1100MHz</td>
+                <td height="57">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G5620</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">2/4</td>
+                <td height="57">4.0</td>
+                <td height="57">NA</td>
+                <td height="57">4</td>
+                <td height="57">UHD 630 350-1100MHz</td>
+                <td height="57">54</td>
+                <td height="57">LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G5600T</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">2/4</td>
+                <td height="57">3.3</td>
+                <td height="57">NA</td>
+                <td height="57">4</td>
+                <td height="57">UHD 630 350-1050MHz</td>
+                <td height="57">35</td>
+                <td height="57">LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G5420</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">2/4</td>
+                <td height="57">3.8</td>
+                <td height="57">NA</td>
+                <td height="57">4</td>
+                <td height="57">UHD 630 350-1050MHz</td>
+                <td height="57">54/58</td>
+                <td height="57">LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G5420T</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">2/4</td>
+                <td height="57">3.2</td>
+                <td height="57">NA</td>
+                <td height="57">4</td>
+                <td height="57">UHD 630 350-1050MHz</td>
+                <td height="57">35</td>
+                <td height="57">LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">赛扬G4950</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">2/2</td>
+                <td height="57">3.3</td>
+                <td height="57">NA</td>
+                <td height="57">2</td>
+                <td height="57">UHD 630 350-1050MHz</td>
+                <td height="57">54</td>
+                <td height="57">LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">赛扬G4930</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">2/2</td>
+                <td height="57">3.2</td>
+                <td height="57">NA</td>
+                <td height="57">2</td>
+                <td height="57">UHD 630 350-1050MHz</td>
+                <td height="57">54</td>
+                <td height="57">LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">赛扬G4930T</td>
+                <td>Coffee Lake-Refresh</td>
+                <td align="right">14nm</td>
+                <td height="57">2/2</td>
+                <td height="57">3.0</td>
+                <td height="57">NA</td>
+                <td height="57">2</td>
+                <td height="57">UHD 630 350-1000MHz</td>
+                <td height="57">35</td>
+                <td height="57">LGA1151</td>
+            </tr>
+            <tr class="tr1">
+                <td><strong>Coffee Lake八代酷睿系列</strong><a name="cfl" id="haswell4"></a></td>
+            </tr>
+            <tr>
+                <td>酷睿i7-8086K</td>
+                <td>Coffee Lake</td>
+                <td>14nm</td>
+                <td>6/12</td>
+                <td>4.0</td>
+                <td>5.0</td>
+                <td>12</td>
+                <td>UHD 630 350-1200MHz</td>
+                <td>95</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i7-8700K</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>6/12</td>
+                <td align="right">3.7</td>
+                <td align="right">4.7</td>
+                <td>12</td>
+                <td>UHD 630 350-1200MHz</td>
+                <td align="right">95</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i7-8700</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>6/12</td>
+                <td align="right">3.2</td>
+                <td align="right">4.6</td>
+                <td>12</td>
+                <td>UHD 630 350-1050MHz</td>
+                <td align="right">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i7-8700T</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>6/12</td>
+                <td align="right">2.4</td>
+                <td align="right">4.0</td>
+                <td>12</td>
+                <td>UHD 630 350-1200MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-8600K</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>6/6</td>
+                <td align="right">3.6</td>
+                <td align="right">4.3</td>
+                <td>9</td>
+                <td>UHD 630 350-1150MHz</td>
+                <td align="right">95</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-8600</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>6/6</td>
+                <td align="right">3.1</td>
+                <td align="right">4.3</td>
+                <td>9</td>
+                <td>UHD 630 350-1150MHz</td>
+                <td align="right">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-8600T</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>6/6</td>
+                <td align="right">2.3</td>
+                <td align="right">3.7</td>
+                <td>9</td>
+                <td>UHD 630 350-1150MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-8500</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>6/6</td>
+                <td align="right">3.0</td>
+                <td align="right">4.1</td>
+                <td>9</td>
+                <td>UHD 630 350-1100MHz</td>
+                <td align="right">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-8500T</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>6/6</td>
+                <td align="right">2.1</td>
+                <td align="right">3.5</td>
+                <td>9</td>
+                <td>UHD 630 350-1100MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-8400</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>6/6</td>
+                <td align="right">2.8</td>
+                <td align="right">4.0</td>
+                <td>9</td>
+                <td>UHD 630 350-1050MHz</td>
+                <td align="right">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57"> 酷睿i5-8400T</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>6/6</td>
+                <td align="right">1.7</td>
+                <td align="right">3.3</td>
+                <td>9</td>
+                <td>UHD 630 350-1050MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-8350K</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>4/4</td>
+                <td align="right">4.0</td>
+                <td align="right">NA</td>
+                <td>8</td>
+                <td>UHD 630 350-1150MHz</td>
+                <td align="right">91</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-8300</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>4/4</td>
+                <td align="right">3.7</td>
+                <td align="right">NA</td>
+                <td>8</td>
+                <td>UHD 630 350-1150MHz</td>
+                <td align="right">62</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-8300T</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>4/4</td>
+                <td align="right">3.2</td>
+                <td align="right">NA</td>
+                <td>8</td>
+                <td>UHD 630 350-1100MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-8100</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>4/4</td>
+                <td align="right">3.6</td>
+                <td align="right">NA</td>
+                <td>6</td>
+                <td>UHD 630 350-1100MHz</td>
+                <td align="right">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-8100F</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>4/4</td>
+                <td align="right">3.6</td>
+                <td align="right">NA</td>
+                <td>6</td>
+                <td>NA</td>
+                <td align="right">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-8100T</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>4/4</td>
+                <td align="right">3.1</td>
+                <td align="right">NA</td>
+                <td>6</td>
+                <td>UHD 630 350-1100MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G5600</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>2/4</td>
+                <td align="right">3.9</td>
+                <td align="right">NA</td>
+                <td>4</td>
+                <td>UHD 630 350-1100MHz</td>
+                <td align="right">54</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G5500</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>2/4</td>
+                <td align="right">3.8</td>
+                <td align="right">NA</td>
+                <td>4</td>
+                <td>UHD 630 350-1100MHz</td>
+                <td align="right">54</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G5500T</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>2/4</td>
+                <td align="right">3.2</td>
+                <td align="right">NA</td>
+                <td>4</td>
+                <td>UHD 630 350-1050MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G5400</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>2/4</td>
+                <td align="right">3.7</td>
+                <td align="right">NA</td>
+                <td>4</td>
+                <td>UHD 610 350-1050MHz</td>
+                <td align="right">54</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G5400T</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>2/4</td>
+                <td align="right">3.1</td>
+                <td align="right">NA</td>
+                <td>4</td>
+                <td>UHD 610 350-1050MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">赛扬G4920</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>2/2</td>
+                <td align="right">3.2</td>
+                <td align="right">NA</td>
+                <td>2</td>
+                <td>UHD 610 350-1050MHz</td>
+                <td align="right">54</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">赛扬G4900</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>2/2</td>
+                <td align="right">3.1</td>
+                <td align="right">NA</td>
+                <td>2</td>
+                <td>UHD 610 350-1050MHz</td>
+                <td align="right">54</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">赛扬G4900T</td>
+                <td>Coffee Lake</td>
+                <td align="right">14nm</td>
+                <td>2/2</td>
+                <td align="right">2.9</td>
+                <td align="right">NA</td>
+                <td>2</td>
+                <td>UHD 610 350-1000MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr class="tr1">
+                <td><strong>Skylake-X、Kaby Lake-X酷睿X系列</strong><a name="sk-x" id="haswell3"></a></td>
+            </tr>
+            <tr>
+                <td height="57">至强W-3175X</td>
+                <td>Skylake-SP</td>
+                <td align="right">14nm</td>
+                <td>28/56</td>
+                <td align="right">3.1</td>
+                <td align="right">4.3</td>
+                <td>38.5</td>
+                <td>NA</td>
+                <td align="right">255</td>
+                <td>LGA3647</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-9980XE</td>
+                <td>Skylake-X</td>
+                <td align="right">14nm</td>
+                <td>18/36</td>
+                <td align="right">3.0</td>
+                <td align="right">4.5</td>
+                <td>24.75</td>
+                <td>NA</td>
+                <td align="right">165</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-9960X</td>
+                <td>Skylake-X</td>
+                <td align="right">14nm</td>
+                <td>16/32</td>
+                <td align="right">3.1</td>
+                <td align="right">4.5</td>
+                <td>22</td>
+                <td>NA</td>
+                <td align="right">165</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-9940X</td>
+                <td>Skylake-X</td>
+                <td align="right">14nm</td>
+                <td>14/28</td>
+                <td align="right">3.3</td>
+                <td align="right">4.5</td>
+                <td>19.25</td>
+                <td>NA</td>
+                <td align="right">165</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-9920X</td>
+                <td>Skylake-X</td>
+                <td align="right">14nm</td>
+                <td>12/24</td>
+                <td align="right">3.5</td>
+                <td align="right">4.5</td>
+                <td>19.25</td>
+                <td>NA</td>
+                <td align="right">165</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-9900X</td>
+                <td>Skylake-X</td>
+                <td align="right">14nm</td>
+                <td>10/20</td>
+                <td align="right">3.5</td>
+                <td align="right">4.5</td>
+                <td>19.25</td>
+                <td>NA</td>
+                <td align="right">165</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-9820X</td>
+                <td>Skylake-X</td>
+                <td align="right">14nm</td>
+                <td>10/20</td>
+                <td align="right">3.3</td>
+                <td align="right">4.2</td>
+                <td>16.5</td>
+                <td>NA</td>
+                <td align="right">165</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i7-9800X</td>
+                <td>Skylake-X</td>
+                <td align="right">14nm</td>
+                <td>8/16</td>
+                <td align="right">3.8</td>
+                <td align="right">4.5</td>
+                <td>16.5</td>
+                <td>NA</td>
+                <td align="right">165</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-7980XE</td>
+                <td>Skylake-X</td>
+                <td align="right">14nm</td>
+                <td>18/36</td>
+                <td align="right">2.6</td>
+                <td align="right">4.4</td>
+                <td>24.75</td>
+                <td>NA</td>
+                <td align="right">165</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-7960X</td>
+                <td>Skylake-X</td>
+                <td align="right">14nm</td>
+                <td>16/32</td>
+                <td align="right">2.8</td>
+                <td align="right">4.4</td>
+                <td>22</td>
+                <td>NA</td>
+                <td align="right">165</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-7940X</td>
+                <td>Skylake-X</td>
+                <td align="right">14nm</td>
+                <td>14/28</td>
+                <td align="right">3.1</td>
+                <td align="right">4.4</td>
+                <td>19.25</td>
+                <td>NA</td>
+                <td align="right">165</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-7920X</td>
+                <td>Skylake-X</td>
+                <td align="right">14nm</td>
+                <td>12/24</td>
+                <td align="right">2.9</td>
+                <td align="right">4.4</td>
+                <td>16.5</td>
+                <td>NA</td>
+                <td align="right">140</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i9-7900X</td>
+                <td>Skylake-X</td>
+                <td align="right">14nm</td>
+                <td>10/20</td>
+                <td align="right">3.3</td>
+                <td align="right">4.5</td>
+                <td>13.75</td>
+                <td>NA</td>
+                <td align="right">140</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i7-7820X</td>
+                <td>Skylake-X</td>
+                <td align="right">14nm</td>
+                <td>8/16</td>
+                <td align="right">3.6</td>
+                <td align="right">4.5</td>
+                <td>11</td>
+                <td>NA</td>
+                <td align="right">140</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i7-7800X</td>
+                <td>Skylake-X</td>
+                <td align="right">14nm</td>
+                <td>6/12</td>
+                <td align="right">3.5</td>
+                <td align="right">4.0</td>
+                <td>8.25</td>
+                <td>NA</td>
+                <td align="right">140</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i7-7740X</td>
+                <td>Kaby Lake-X</td>
+                <td align="right">14nm</td>
+                <td>4/8</td>
+                <td align="right">4.3</td>
+                <td align="right">4.5</td>
+                <td>8</td>
+                <td>NA</td>
+                <td align="right">112</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-7640X</td>
+                <td>Kaby Lake-X</td>
+                <td align="right">14nm</td>
+                <td>4/8</td>
+                <td align="right">4.0</td>
+                <td align="right">4.2</td>
+                <td>6</td>
+                <td>NA</td>
+                <td align="right">112</td>
+                <td>LGA2066</td>
+            </tr>
+            <tr class="tr1">
+                <td><strong>Kaby Lake七代酷睿系列</strong><a name="kabylake" id="haswell"></a></td>
+            </tr>
+            <tr>
+                <td height="57">赛扬G3930</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>2/2</td>
+                <td align="right">2.9</td>
+                <td align="right">NA</td>
+                <td>2</td>
+                <td>HD 610 350-1050MHz</td>
+                <td align="right">51</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">赛扬G3930T</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>2/2</td>
+                <td align="right">2.7</td>
+                <td align="right">NA</td>
+                <td>2</td>
+                <td>HD 610 350-1000MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">赛扬G3950</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>2/2</td>
+                <td align="right">3.0</td>
+                <td align="right">NA</td>
+                <td>2</td>
+                <td>HD 610 350-1050MHz</td>
+                <td align="right">51</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G4560</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>2/4</td>
+                <td align="right">3.5</td>
+                <td align="right">NA</td>
+                <td>3</td>
+                <td>HD 610 350-1050MHz</td>
+                <td align="right">54</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G4560T</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>2/4</td>
+                <td align="right">2.9</td>
+                <td align="right">NA</td>
+                <td>3</td>
+                <td>HD 610 350-1050MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G4600</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>2/4</td>
+                <td align="right">3.6</td>
+                <td align="right">NA</td>
+                <td>3</td>
+                <td>HD 630 350-1100MHz</td>
+                <td align="right">51</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G4600T</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>2/4</td>
+                <td align="right">3.0</td>
+                <td align="right">NA</td>
+                <td>3</td>
+                <td>HD 630 350-1050MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G4620</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>2/4</td>
+                <td align="right">3.7</td>
+                <td align="right">NA</td>
+                <td>3</td>
+                <td>HD 630 350-1100MHz</td>
+                <td align="right">51</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-7100</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>2/4</td>
+                <td align="right">3.9</td>
+                <td align="right">NA</td>
+                <td>3</td>
+                <td>HD 630 350-1100MHz</td>
+                <td align="right">51</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-7100T</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>2/4</td>
+                <td align="right">3.4</td>
+                <td align="right">NA</td>
+                <td>3</td>
+                <td>HD 630 350-1100MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-7300</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>2/4</td>
+                <td align="right">4.0</td>
+                <td align="right">NA</td>
+                <td>4</td>
+                <td>HD 630 350-1150MHz</td>
+                <td align="right">51</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-7300T</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>2/4</td>
+                <td align="right">3.5</td>
+                <td align="right">NA</td>
+                <td>4</td>
+                <td>HD 630 350-1100MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-7320</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>2/4</td>
+                <td align="right">4.1</td>
+                <td align="right">NA</td>
+                <td>4</td>
+                <td>HD 630 350-1150MHz</td>
+                <td align="right">51</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i3-7350K</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>2/4</td>
+                <td align="right">4.2</td>
+                <td align="right">NA</td>
+                <td>4</td>
+                <td>HD 630 350-1150MHz</td>
+                <td align="right">60</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-7400</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>4/4</td>
+                <td align="right">3.0</td>
+                <td align="right">3.5</td>
+                <td>6</td>
+                <td>HD 630 350-1000MHz</td>
+                <td align="right">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-7400T</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>4/4</td>
+                <td align="right">2.4</td>
+                <td align="right">3.0</td>
+                <td>6</td>
+                <td>HD 630 350-1000MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-7500</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>4/4</td>
+                <td align="right">3.4</td>
+                <td align="right">3.8</td>
+                <td>6</td>
+                <td>HD 630 350-1100MHz</td>
+                <td align="right">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-7500T</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>4/4</td>
+                <td align="right">2.7</td>
+                <td align="right">3.3</td>
+                <td>6</td>
+                <td>HD 630 350-1100MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-7600</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>4/4</td>
+                <td align="right">3.5</td>
+                <td align="right">4.1</td>
+                <td>6</td>
+                <td>HD 630 350-1150MHz</td>
+                <td align="right">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-7600T</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>4/4</td>
+                <td align="right">2.8</td>
+                <td align="right">3.7</td>
+                <td>6</td>
+                <td>HD 630 350-1100MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i5-7600K</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>4/4</td>
+                <td align="right">3.8</td>
+                <td align="right">4.2</td>
+                <td>6</td>
+                <td>HD 630 350-1150MHz</td>
+                <td align="right">91</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">酷睿i7-7700</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>4/8</td>
+                <td align="right">3.6</td>
+                <td align="right">4.2</td>
+                <td>8</td>
+                <td>HD 630 350-1150MHz</td>
+                <td align="right">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td>酷睿i7-7700T</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>4/8</td>
+                <td align="right">2.9</td>
+                <td align="right">3.8</td>
+                <td align="right">8</td>
+                <td>HD 630 350-1150MHz</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td>酷睿i7-7700K</td>
+                <td>Kaby Lake</td>
+                <td align="right">14</td>
+                <td>4/8</td>
+                <td align="right">4.2</td>
+                <td align="right">4.5</td>
+                <td align="right">8</td>
+                <td>HD 630 350-1150MHz</td>
+                <td align="right">91</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td>酷睿i5-8305G</td>
+                <td>Kaby Lake-G</td>
+                <td align="right">14</td>
+                <td>4/8</td>
+                <td align="right">2.8</td>
+                <td align="right">3.8</td>
+                <td align="right">6</td>
+                <td>
+                    <p>UHD 630 350-1000MHz<br>
+                        Vega M GL(1280SP) 931-1011MHz</p>
+                </td>
+                <td align="right">65</td>
+                <td>BGA2270</td>
+            </tr>
+            <tr>
+                <td>酷睿i7-8705G</td>
+                <td>Kaby Lake-G</td>
+                <td align="right">14</td>
+                <td>4/8</td>
+                <td align="right">3.1</td>
+                <td align="right">4.1</td>
+                <td align="right">8</td>
+                <td>
+                    <p>UHD 630 350-1100MHz<br>
+                        Vega M GL(1280SP) 931-1011MHz</p>
+                </td>
+                <td align="right">65</td>
+                <td>BGA2270</td>
+            </tr>
+            <tr>
+                <td>酷睿i7-8706G</td>
+                <td>Kaby Lake-G</td>
+                <td align="right">14</td>
+                <td>4/8</td>
+                <td align="right">3.1</td>
+                <td align="right">4.1</td>
+                <td align="right">8</td>
+                <td>
+                    <p>UHD 630 350-1100MHz<br>
+                        Vega M GL(1280SP) 931-1011MHz</p>
+                </td>
+                <td align="right">65</td>
+                <td>BGA2270</td>
+            </tr>
+            <tr>
+                <td>酷睿i7-8709G</td>
+                <td>Kaby Lake-G</td>
+                <td align="right">14</td>
+                <td>4/8</td>
+                <td align="right">3.1</td>
+                <td align="right">4.1</td>
+                <td align="right">8</td>
+                <td>
+                    <p>UHD 630 350-1100MHz<br>
+                        Vega M GH(1536SP) 1063-1190MHz</p>
+                </td>
+                <td align="right">&nbsp;</td>
+                <td>BGA2270</td>
+            </tr>
+            <tr>
+                <td>酷睿i7-8809G</td>
+                <td>Kaby Lake-G</td>
+                <td align="right">14</td>
+                <td>4/8</td>
+                <td align="right">3.1</td>
+                <td align="right">4.2</td>
+                <td align="right">8</td>
+                <td>
+                    <p>UHD 630 350-1100MHz<br>
+                        Vega M GH(1536SP) 1063-1190MHz</p>
+                </td>
+                <td align="right">&nbsp;</td>
+                <td>BGA2270</td>
+            </tr>
+            <tr class="tr1">
+                <td><strong>Broadwell/Skylake五六代酷睿系列</strong><a name="skylake" id="haswell2"></a></td>
+            </tr>
+            <tr>
+                <td height="57">i5-5675C</td>
+                <td>Broadwell</td>
+                <td align="right">14</td>
+                <td>4/8</td>
+                <td align="right">3.3</td>
+                <td align="right">3.7</td>
+                <td>4</td>
+                <td>Iris Pro 6200</td>
+                <td align="right">65</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td height="57">i7-5775C</td>
+                <td>Broadwell</td>
+                <td align="right">14</td>
+                <td>4/8</td>
+                <td align="right">3.1</td>
+                <td align="right">3.6</td>
+                <td>6</td>
+                <td>Iris Pro 6200</td>
+                <td align="right">65</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td height="57">赛扬G3900T</td>
+                <td>Skylake</td>
+                <td align="right">14</td>
+                <td>2/2</td>
+                <td align="right">2.6</td>
+                <td align="right">NA</td>
+                <td>2</td>
+                <td>HD 510</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">赛扬G3900</td>
+                <td>Skylake</td>
+                <td align="right">14</td>
+                <td>2/2</td>
+                <td align="right">2.8</td>
+                <td align="right">NA</td>
+                <td>2</td>
+                <td>HD 510</td>
+                <td align="right">51</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">赛扬G3920</td>
+                <td>Skylake</td>
+                <td align="right">14</td>
+                <td>2/2</td>
+                <td align="right">2.9</td>
+                <td align="right">NA</td>
+                <td>2</td>
+                <td>HD 510</td>
+                <td align="right">51</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G4400T</td>
+                <td>Skylake</td>
+                <td align="right">14</td>
+                <td>2/2</td>
+                <td align="right">2.9</td>
+                <td align="right">NA</td>
+                <td>3</td>
+                <td>HD 510</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G4400</td>
+                <td>Skylake</td>
+                <td align="right">14</td>
+                <td>2/2</td>
+                <td align="right">3.3</td>
+                <td align="right">NA</td>
+                <td>3</td>
+                <td>HD 510</td>
+                <td align="right">54</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G4500T</td>
+                <td>Skylake</td>
+                <td align="right">14</td>
+                <td>2/2</td>
+                <td align="right">3.0</td>
+                <td align="right">NA</td>
+                <td>3</td>
+                <td>HD 530</td>
+                <td align="right">35</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G4500</td>
+                <td>Skylake</td>
+                <td align="right">14</td>
+                <td>2/2</td>
+                <td align="right">
+                    <p>3.5</p>
+                </td>
+                <td align="right">NA</td>
+                <td>3</td>
+                <td>HD 530</td>
+                <td align="right">51</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G4520</td>
+                <td>Skylake</td>
+                <td align="right">14</td>
+                <td>2/2</td>
+                <td align="right">3.6</td>
+                <td align="right">NA</td>
+                <td>3</td>
+                <td>HD 530</td>
+                <td align="right">51</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">i3-6100</td>
+                <td>Skylake</td>
+                <td align="right">14</td>
+                <td>2/4</td>
+                <td align="right">3.7</td>
+                <td align="right">NA</td>
+                <td>3</td>
+                <td>HD 530</td>
+                <td align="right">51</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">i3-6300</td>
+                <td>Skylake</td>
+                <td align="right">14</td>
+                <td>2/4</td>
+                <td align="right">3.8</td>
+                <td align="right">NA</td>
+                <td>4</td>
+                <td>HD 530</td>
+                <td align="right">51</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td>i3-6320</td>
+                <td>Skylake</td>
+                <td align="right">14</td>
+                <td>2/4</td>
+                <td align="right">3.9</td>
+                <td align="right">NA</td>
+                <td align="right">4</td>
+                <td>HD 530</td>
+                <td align="right">51</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td>i5-6400</td>
+                <td>Skylake</td>
+                <td align="right">14</td>
+                <td>4/4</td>
+                <td align="right">2.7</td>
+                <td align="right">3.6</td>
+                <td align="right">6</td>
+                <td>HD 530</td>
+                <td align="right">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td>i5-6500</td>
+                <td>Skylake</td>
+                <td align="right">14</td>
+                <td>4/4</td>
+                <td align="right">3.2</td>
+                <td align="right">3.6</td>
+                <td align="right">6</td>
+                <td>HD 530</td>
+                <td align="right">65</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td>i5-6600K</td>
+                <td>Skylake</td>
+                <td align="right">14</td>
+                <td>4/4</td>
+                <td align="right">3.5</td>
+                <td align="right">3.9</td>
+                <td align="right">6</td>
+                <td>HD 530</td>
+                <td align="right">91</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td>i7-6700K</td>
+                <td>Skylake</td>
+                <td align="right">14</td>
+                <td>4/8</td>
+                <td align="right">4.0</td>
+                <td align="right">4.2</td>
+                <td align="right">8</td>
+                <td>HD 530</td>
+                <td align="right">91</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td height="57">E3-1230 v5</td>
+                <td>Skylake</td>
+                <td align="right">14</td>
+                <td>4/8</td>
+                <td align="right">3.4</td>
+                <td align="right">3.8</td>
+                <td>8</td>
+                <td>NA</td>
+                <td align="right">80</td>
+                <td>LGA1151</td>
+            </tr>
+            <tr>
+                <td>i7-6800K</td>
+                <td>Broadwell-E</td>
+                <td align="right">14</td>
+                <td>6/12</td>
+                <td>3.4</td>
+                <td>3.8</td>
+                <td>15</td>
+                <td>NA</td>
+                <td>140</td>
+                <td>LGA2011-3</td>
+            </tr>
+            <tr>
+                <td>i7-6850K</td>
+                <td>Broadwell-E</td>
+                <td align="right">14</td>
+                <td>6/12</td>
+                <td>3.6</td>
+                <td>4.0</td>
+                <td>15</td>
+                <td>NA</td>
+                <td>140</td>
+                <td>LGA2011-3</td>
+            </tr>
+            <tr>
+                <td>i7-6900K</td>
+                <td>Broadwell-E</td>
+                <td align="right">14</td>
+                <td>8/16</td>
+                <td>3.2</td>
+                <td>4.0</td>
+                <td>20</td>
+                <td>NA</td>
+                <td>140</td>
+                <td>LGA2011-3</td>
+            </tr>
+            <tr>
+                <td>i7-6950X</td>
+                <td>Broadwell-E</td>
+                <td align="right">14</td>
+                <td>10/20</td>
+                <td>3.0</td>
+                <td>4.0</td>
+                <td>25</td>
+                <td>NA</td>
+                <td>140</td>
+                <td>LGA2011-3</td>
+            </tr>
+            <tr class="tr1">
+                <td><strong>Haswell四代酷睿系列</strong><a name="haswell" id="haswell2"></a></td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G3220T</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>2/2</td>
+                <td align="right">2.6</td>
+                <td align="right">N/A</td>
+                <td>3</td>
+                <td>HD Graphics</td>
+                <td align="right">35</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G3220</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>2/2</td>
+                <td align="right">3.0</td>
+                <td align="right">N/A</td>
+                <td>3</td>
+                <td>HD Graphics</td>
+                <td align="right">54</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G3420T</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>2/2</td>
+                <td align="right">2.7</td>
+                <td align="right">N/A</td>
+                <td>3</td>
+                <td>HD Graphics</td>
+                <td align="right">35</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G3420</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>2/2</td>
+                <td align="right">3.2</td>
+                <td align="right">N/A</td>
+                <td>3</td>
+                <td>HD Graphics</td>
+                <td align="right">54</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td height="57">奔腾G3430</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>2/2</td>
+                <td align="right">3.3</td>
+                <td align="right">N/A</td>
+                <td>3</td>
+                <td>HD Graphics</td>
+                <td align="right">54</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td height="57">i3-4130</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>2/4</td>
+                <td align="right">3.4</td>
+                <td align="right">N/A</td>
+                <td>3</td>
+                <td>HD 4400</td>
+                <td align="right">54</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td height="57">i3-4130T</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>2/4</td>
+                <td align="right">2.9</td>
+                <td align="right">N/A</td>
+                <td>3</td>
+                <td>HD 4400</td>
+                <td align="right">35</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td height="57">i3-4330</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>2/4</td>
+                <td align="right">3.5</td>
+                <td align="right">N/A</td>
+                <td>4</td>
+                <td>HD 4400</td>
+                <td align="right">54</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td height="57">i3-4330T</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>2/4</td>
+                <td align="right">3.0</td>
+                <td align="right">N/A</td>
+                <td>4</td>
+                <td>HD 4400</td>
+                <td align="right">35</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td height="57">i3-4340</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>2/4</td>
+                <td align="right">3.5</td>
+                <td align="right">N/A</td>
+                <td>4</td>
+                <td>HD 4400</td>
+                <td align="right">54</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td>i5-4430</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>4/4</td>
+                <td align="right">3</td>
+                <td align="right">3.2</td>
+                <td align="right">6</td>
+                <td>HD 4600</td>
+                <td align="right">84</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td>i5-4570</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>4/4</td>
+                <td align="right">3.2</td>
+                <td align="right">3.6</td>
+                <td align="right">6</td>
+                <td>HD 4600</td>
+                <td align="right">84</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td>i5-4590</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>4/4</td>
+                <td align="right">3.3</td>
+                <td align="right">3.7</td>
+                <td align="right">6</td>
+                <td>HD 4600</td>
+                <td align="right">84</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td>i5-4670K</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>4/4</td>
+                <td align="right">3.4</td>
+                <td align="right">3.8</td>
+                <td align="right">6</td>
+                <td>HD 4600</td>
+                <td align="right">84</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td>E3-1230v3</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>4/8</td>
+                <td align="right">3.3</td>
+                <td align="right">3.7</td>
+                <td align="right">8</td>
+                <td>N/A</td>
+                <td align="right">80</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td>i7-4770</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>4/8</td>
+                <td align="right">3.4</td>
+                <td align="right">3.9</td>
+                <td align="right">8</td>
+                <td>HD 4600</td>
+                <td align="right">84</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td height="57">i7-4771</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>4/8</td>
+                <td align="right">3.5</td>
+                <td align="right">3.9</td>
+                <td>8</td>
+                <td>HD 4600</td>
+                <td align="right">84</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td>i7-4770K</td>
+                <td>Haswell</td>
+                <td align="right">22</td>
+                <td>4/8</td>
+                <td align="right">3.5</td>
+                <td align="right">3.9</td>
+                <td>8</td>
+                <td>HD 4600</td>
+                <td align="right">84</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td>i7-4690K</td>
+                <td>Devil's Canyon</td>
+                <td align="right">22</td>
+                <td>4/8</td>
+                <td align="right">3.5</td>
+                <td align="right">3.9</td>
+                <td>8</td>
+                <td>HD 4600</td>
+                <td align="right">88</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td>i7-4790K</td>
+                <td>Devil's Canyon</td>
+                <td align="right">22</td>
+                <td>4/8</td>
+                <td align="right">4.0</td>
+                <td align="right">4.4</td>
+                <td>8</td>
+                <td>HD 4600</td>
+                <td align="right">88</td>
+                <td>LGA1150</td>
+            </tr>
+            <tr>
+                <td>i7-5820K</td>
+                <td>Haswell-E</td>
+                <td align="right">22</td>
+                <td>6/12</td>
+                <td align="right">3.3</td>
+                <td align="right">3.6</td>
+                <td>15</td>
+                <td>N/A</td>
+                <td align="right">140</td>
+                <td>LGA2011-3</td>
+            </tr>
+            <tr>
+                <td>i7-5930K</td>
+                <td>Haswell-E</td>
+                <td align="right">22</td>
+                <td>6/12</td>
+                <td align="right">3.5</td>
+                <td align="right">3.7</td>
+                <td>15</td>
+                <td>N/A</td>
+                <td align="right">140</td>
+                <td>LGA2011-3</td>
+            </tr>
+            <tr>
+                <td>i7-5960X</td>
+                <td>Haswell-E</td>
+                <td align="right">22</td>
+                <td>8/16</td>
+                <td align="right">3.0</td>
+                <td align="right">3.5</td>
+                <td>20</td>
+                <td>N/A</td>
+                <td align="right">140</td>
+                <td>LGA2011-3</td>
+            </tr>
+            <tr class="tr1">
+                <td><strong>Ivy Bridge三代酷睿系列<a name="ivb" id="ivy2"></a></strong></td>
+            </tr>
+            <tr>
+                <td>赛扬G1610</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>2/2</td>
+                <td align="right">2.6</td>
+                <td>N/A</td>
+                <td align="right">2</td>
+                <td>HD Graphics</td>
+                <td align="right">55</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>赛扬G1620</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>2/2</td>
+                <td align="right">2.7</td>
+                <td>N/A</td>
+                <td align="right">2</td>
+                <td>HD Graphics</td>
+                <td align="right">55</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>奔腾G2010</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>2/2</td>
+                <td align="right">2.8</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD Graphics</td>
+                <td align="right">55</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>奔腾G2020</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>2/2</td>
+                <td align="right">2.9</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD Graphics</td>
+                <td align="right">55</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>奔腾G2120</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>2/2</td>
+                <td align="right">3.1</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD Graphics</td>
+                <td align="right">55</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>奔腾G2130</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>2/2</td>
+                <td align="right">3.2</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD Graphics</td>
+                <td align="right">55</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i3-3210</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>2/4</td>
+                <td align="right">3.2</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD 2500</td>
+                <td align="right">55</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i3-3220</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>2/4</td>
+                <td align="right">3.3</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD 2500</td>
+                <td align="right">55</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i3-3225</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>2/4</td>
+                <td align="right">3.3</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD 4000</td>
+                <td align="right">55</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i5-3330</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>4/4</td>
+                <td align="right">3</td>
+                <td align="right">3.2</td>
+                <td align="right">6</td>
+                <td>HD 2500</td>
+                <td align="right">77</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i5-3450</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>4/4</td>
+                <td align="right">3.1</td>
+                <td align="right">3.5</td>
+                <td align="right">6</td>
+                <td>HD 2500</td>
+                <td align="right">77</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i5-3470</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>4/4</td>
+                <td align="right">3.2</td>
+                <td align="right">3.6</td>
+                <td align="right">6</td>
+                <td>HD 2500</td>
+                <td align="right">77</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i5-3550</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>4/4</td>
+                <td align="right">3.3</td>
+                <td align="right">3.7</td>
+                <td align="right">6</td>
+                <td>HD 2500</td>
+                <td align="right">77</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i5-3570</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>4/4</td>
+                <td align="right">3.4</td>
+                <td align="right">3.8</td>
+                <td align="right">6</td>
+                <td>HD 2500</td>
+                <td align="right">77</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i5-3570K</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>4/4</td>
+                <td align="right">3.4</td>
+                <td align="right">3.8</td>
+                <td align="right">6</td>
+                <td>HD 4000</td>
+                <td align="right">77</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>E3-1230v2</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>4/8</td>
+                <td align="right">3.3</td>
+                <td>3.7</td>
+                <td align="right">8</td>
+                <td>N/A</td>
+                <td align="right">69</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i7-3770</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>4/8</td>
+                <td align="right">3.4</td>
+                <td align="right">3.9</td>
+                <td align="right">8</td>
+                <td>HD 4000</td>
+                <td align="right">77</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i7-3770K</td>
+                <td>Ivy Bridge</td>
+                <td align="right">22</td>
+                <td>4/8</td>
+                <td align="right">3.5</td>
+                <td align="right">3.9</td>
+                <td align="right">8</td>
+                <td>HD 4000</td>
+                <td align="right">77</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i7-4820K</td>
+                <td>Ivy Bridge-E</td>
+                <td>22</td>
+                <td>4/8</td>
+                <td>3.6</td>
+                <td>4.0</td>
+                <td>10</td>
+                <td>NA</td>
+                <td>130</td>
+                <td>LGA2011</td>
+            </tr>
+            <tr>
+                <td>i7-4930K</td>
+                <td>Ivy Bridge-E</td>
+                <td>22</td>
+                <td>6/12</td>
+                <td>3.4</td>
+                <td>3.9</td>
+                <td>12</td>
+                <td>NA</td>
+                <td>130</td>
+                <td>LGA2011</td>
+            </tr>
+            <tr>
+                <td>i7-4960X</td>
+                <td>Ivy Bridge-E</td>
+                <td>22</td>
+                <td>6/12</td>
+                <td>3.6</td>
+                <td>4.0</td>
+                <td>15</td>
+                <td>NA</td>
+                <td>130</td>
+                <td>LGA2011</td>
+            </tr>
+            <tr class="tr1">
+                <td><strong>Sandy Bridge二代酷睿系列</strong><a name="snb" id="snb2"></a></td>
+            </tr>
+            <tr>
+                <td>赛扬G530</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/2</td>
+                <td align="right">2.4</td>
+                <td>N/A</td>
+                <td align="right">2</td>
+                <td>HD Graphics</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>赛扬G540</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/2</td>
+                <td align="right">2.5</td>
+                <td>N/A</td>
+                <td align="right">2</td>
+                <td>HD Graphics</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>奔腾G620</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/2</td>
+                <td align="right">2.6</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD Graphics</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>赛扬G550</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/2</td>
+                <td align="right">2.6</td>
+                <td>N/A</td>
+                <td align="right">2</td>
+                <td>HD Graphics</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>奔腾G630</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/2</td>
+                <td align="right">2.7</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD Graphics</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>赛扬G555</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/2</td>
+                <td align="right">2.7</td>
+                <td>N/A</td>
+                <td align="right">2</td>
+                <td>HD Graphics</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>奔腾G640</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/2</td>
+                <td align="right">2.8</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD Graphics</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>奔腾G840</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/2</td>
+                <td align="right">2.8</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD Graphics</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>奔腾G645</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/2</td>
+                <td align="right">2.9</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD Graphics</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>奔腾G850</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/2</td>
+                <td align="right">2.9</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD Graphics</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>奔腾G860</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/2</td>
+                <td align="right">3</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD Graphics</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>奔腾G870</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/2</td>
+                <td align="right">3.1</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD Graphics</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i3-2100</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/4</td>
+                <td align="right">3.1</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD 2000</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i3-2102</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/4</td>
+                <td align="right">3.1</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD 2000</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i3-2120</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/4</td>
+                <td align="right">3.3</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD 2000</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i3-2125</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/4</td>
+                <td align="right">3.3</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD 3000</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i3-2130</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>2/4</td>
+                <td align="right">3.4</td>
+                <td>N/A</td>
+                <td align="right">3</td>
+                <td>HD 2000</td>
+                <td align="right">65</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i5-2300</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>4/4</td>
+                <td align="right">2.8</td>
+                <td align="right">3.1</td>
+                <td align="right">6</td>
+                <td>HD 2000</td>
+                <td align="right">95</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i5-2310</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>4/4</td>
+                <td align="right">2.9</td>
+                <td align="right">3.2</td>
+                <td align="right">6</td>
+                <td>HD 2000</td>
+                <td align="right">95</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i5-2320</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>4/4</td>
+                <td align="right">3</td>
+                <td align="right">3.3</td>
+                <td align="right">6</td>
+                <td>HD 2000</td>
+                <td align="right">95</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i5-2400</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>4/4</td>
+                <td align="right">3.1</td>
+                <td align="right">3.4</td>
+                <td align="right">6</td>
+                <td>HD 2000</td>
+                <td align="right">95</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i5-2500K</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>4/4</td>
+                <td align="right">3.3</td>
+                <td align="right">3.7</td>
+                <td align="right">6</td>
+                <td>HD 3000</td>
+                <td align="right">95</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i5-2550K</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>4/4</td>
+                <td align="right">3.4</td>
+                <td align="right">3.8</td>
+                <td align="right">6</td>
+                <td>HD 3000</td>
+                <td align="right">95</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>E3-1230</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>4/8</td>
+                <td align="right">3.2</td>
+                <td>3.6</td>
+                <td align="right">8</td>
+                <td>N/A</td>
+                <td align="right">80</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i7-2600</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>4/8</td>
+                <td align="right">3.4</td>
+                <td align="right">3.8</td>
+                <td align="right">8</td>
+                <td>HD 2000</td>
+                <td align="right">95</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i7-2600K</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>4/8</td>
+                <td align="right">3.4</td>
+                <td align="right">3.8</td>
+                <td align="right">8</td>
+                <td>HD 3000</td>
+                <td align="right">95</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i7-2700K</td>
+                <td>Sandy Bridge</td>
+                <td align="right">32</td>
+                <td>4/8</td>
+                <td align="right">3.5</td>
+                <td align="right">3.9</td>
+                <td align="right">8</td>
+                <td>HD 3000</td>
+                <td align="right">95</td>
+                <td>LGA1155</td>
+            </tr>
+            <tr>
+                <td>i7-3820</td>
+                <td>Sandy Bridge-E</td>
+                <td align="right">32</td>
+                <td>4/8</td>
+                <td align="right">3.6</td>
+                <td align="right">3.8</td>
+                <td align="right">10</td>
+                <td>N/A</td>
+                <td align="right">130</td>
+                <td>LGA2011</td>
+            </tr>
+            <tr>
+                <td>i7-3930X</td>
+                <td>Sandy Bridge-E</td>
+                <td align="right">32</td>
+                <td>6/12</td>
+                <td align="right">3.2</td>
+                <td align="right">3.8</td>
+                <td align="right">12</td>
+                <td>N/A</td>
+                <td align="right">130</td>
+                <td>LGA2011</td>
+            </tr>
+            <tr>
+                <td>i7-3960X</td>
+                <td>Sandy Bridge-E</td>
+                <td align="right">32</td>
+                <td>6/12</td>
+                <td align="right">3.3</td>
+                <td align="right">3.9</td>
+                <td align="right">15</td>
+                <td>N/A</td>
+                <td align="right">130</td>
+                <td>LGA2011</td>
+            </tr>
+            <tr>
+                <td>i7-3970X</td>
+                <td>Sandy Bridge-E</td>
+                <td align="right">32</td>
+                <td>6/12</td>
+                <td align="right">3.5</td>
+                <td align="right">4</td>
+                <td align="right">15</td>
+                <td>N/A</td>
+                <td align="right">150</td>
+                <td>LGA2011</td>
+            </tr>
+            <tr class="tr1">
+                <td><strong>Nehalem系列</strong><a name="nehalem" id="Nehalem2"></a></td>
+            </tr>
+            <tr>
+                <td>i3-530</td>
+                <td>Nehalem</td>
+                <td align="right">32</td>
+                <td>2/4</td>
+                <td align="right">2.93</td>
+                <td>N/A</td>
+                <td align="right">4</td>
+                <td>HD Graphics</td>
+                <td align="right">73</td>
+                <td>LGA1366</td>
+            </tr>
+            <tr>
+                <td>i5-670</td>
+                <td>Nehalem</td>
+                <td align="right">32</td>
+                <td>2/4</td>
+                <td align="right">3.46</td>
+                <td align="right">3.73</td>
+                <td align="right">4</td>
+                <td>HD Graphics</td>
+                <td align="right">73</td>
+                <td>LGA1366</td>
+            </tr>
+            <tr>
+                <td>i5-680</td>
+                <td>Nehalem</td>
+                <td align="right">32</td>
+                <td>2/4</td>
+                <td align="right">3.6</td>
+                <td align="right">3.86</td>
+                <td align="right">4</td>
+                <td>HD Graphics</td>
+                <td align="right">73</td>
+                <td>LGA1366</td>
+            </tr>
+            <tr>
+                <td>i5-750</td>
+                <td>Nehalem</td>
+                <td align="right">45</td>
+                <td>4/4</td>
+                <td align="right">2.66</td>
+                <td align="right">3.2</td>
+                <td align="right">8</td>
+                <td>HD Graphics</td>
+                <td align="right">95</td>
+                <td>LGA1366</td>
+            </tr>
+            <tr>
+                <td>i5-760</td>
+                <td>Nehalem</td>
+                <td align="right">45</td>
+                <td>4/4</td>
+                <td align="right">2.8</td>
+                <td align="right">3.33</td>
+                <td align="right">8</td>
+                <td>HD Graphics</td>
+                <td align="right">95</td>
+                <td>LGA1366</td>
+            </tr>
+            <tr>
+                <td>i7-920</td>
+                <td>Nehalem</td>
+                <td align="right">45</td>
+                <td>4/8</td>
+                <td align="right">2.66</td>
+                <td align="right">2.93</td>
+                <td align="right">8</td>
+                <td>HD Graphics</td>
+                <td align="right">130</td>
+                <td>LGA1366</td>
+            </tr>
+            <tr>
+                <td>i7-870</td>
+                <td>Nehalem</td>
+                <td align="right">45</td>
+                <td>4/8</td>
+                <td align="right">2.93</td>
+                <td align="right">3.6</td>
+                <td align="right">8</td>
+                <td>HD Graphics</td>
+                <td align="right">95</td>
+                <td>LGA1366</td>
+            </tr>
+            <tr>
+                <td>i7-940</td>
+                <td>Nehalem</td>
+                <td align="right">45</td>
+                <td>4/8</td>
+                <td align="right">2.93</td>
+                <td align="right">3.2</td>
+                <td align="right">8</td>
+                <td>HD Graphics</td>
+                <td align="right">130</td>
+                <td>LGA1366</td>
+            </tr>
+            <tr>
+                <td>i7-960</td>
+                <td>Nehalem</td>
+                <td align="right">45</td>
+                <td>4/8</td>
+                <td align="right">3.2</td>
+                <td align="right">3.46</td>
+                <td align="right">8</td>
+                <td>HD Graphics</td>
+                <td align="right">130</td>
+                <td>LGA1366</td>
+            </tr>
+            <tr>
+                <td>i7-970</td>
+                <td>Nehalem</td>
+                <td align="right">32</td>
+                <td>6/12</td>
+                <td align="right">3.2</td>
+                <td align="right">3.46</td>
+                <td align="right">12</td>
+                <td>HD Graphics</td>
+                <td align="right">130</td>
+                <td>LGA1366</td>
+            </tr>
+            <tr>
+                <td>i7-980X</td>
+                <td>Nehalem</td>
+                <td align="right">32</td>
+                <td>6/12</td>
+                <td align="right">3.33</td>
+                <td align="right">3.6</td>
+                <td align="right">12</td>
+                <td>HD Graphics</td>
+                <td align="right">130</td>
+                <td>LGA1366</td>
+            </tr>
+            <tr>
+                <td>i7-990X</td>
+                <td>Nehalem</td>
+                <td align="right">32</td>
+                <td>6/12</td>
+                <td align="right">3.46</td>
+                <td align="right">3.73</td>
+                <td align="right">12</td>
+                <td>HD Graphics</td>
+                <td align="right">130</td>
+                <td>LGA1366</td>
+            </tr>
+            <tr class="tr1" style="">
+                <td height="100"><strong>Core 2系列<a name="core2" id="core2"></a></strong></td>
+            </tr>
+            <tr>
+                <td width="130">奔腾E2140</td>
+                <td width="130">Core 2</td>
+                <td width="130" align="right">65</td>
+                <td width="130">2/2</td>
+                <td width="130" align="right">1.6</td>
+                <td width="159">N/A</td>
+                <td width="130">N/A</td>
+                <td width="130">N/A</td>
+                <td width="136" align="right">65</td>
+                <td width="136">LGA775</td>
+            </tr>
+            <tr>
+                <td>奔腾E2200</td>
+                <td>Core 2</td>
+                <td align="right">65</td>
+                <td>2/2</td>
+                <td align="right">2.2</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td align="right">65</td>
+                <td>LGA775</td>
+            </tr>
+            <tr>
+                <td>赛扬E3300</td>
+                <td>Core 2</td>
+                <td align="right">45</td>
+                <td>2/2</td>
+                <td align="right">2.5</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td align="right">65</td>
+                <td>LGA775</td>
+            </tr>
+            <tr>
+                <td>酷睿2 E4200</td>
+                <td>Core 2</td>
+                <td align="right">65</td>
+                <td>2/2</td>
+                <td align="right">1.6</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td align="right">65</td>
+                <td>LGA775</td>
+            </tr>
+            <tr>
+                <td>酷睿2 E4300</td>
+                <td>Core 2</td>
+                <td align="right">65</td>
+                <td>2/2</td>
+                <td align="right">1.8</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td align="right">65</td>
+                <td>LGA775</td>
+            </tr>
+            <tr>
+                <td>酷睿2 E4400</td>
+                <td>Core 2</td>
+                <td align="right">65</td>
+                <td>2/2</td>
+                <td align="right">2</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td align="right">65</td>
+                <td>LGA775</td>
+            </tr>
+            <tr>
+                <td>酷睿2 E6300</td>
+                <td>Core 2</td>
+                <td align="right">65</td>
+                <td>2/2</td>
+                <td align="right">1.86</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td align="right">65</td>
+                <td>LGA775</td>
+            </tr>
+            <tr>
+                <td>酷睿2 E6400</td>
+                <td>Core 2</td>
+                <td align="right">65</td>
+                <td>2/2</td>
+                <td align="right">2.13</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td align="right">65</td>
+                <td>LGA775</td>
+            </tr>
+            <tr>
+                <td> 酷睿2 E4500</td>
+                <td>Core 2</td>
+                <td align="right">65</td>
+                <td>2/2</td>
+                <td align="right">2.2</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td align="right">65</td>
+                <td>LGA775</td>
+            </tr>
+            <tr>
+                <td>酷睿2 E5300</td>
+                <td>Core 2</td>
+                <td align="right">45</td>
+                <td>2/2</td>
+                <td align="right">2.6</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td align="right">65</td>
+                <td>LGA775</td>
+            </tr>
+            <tr>
+                <td> 酷睿2 E8400</td>
+                <td>Core 2</td>
+                <td align="right">45</td>
+                <td>2/2</td>
+                <td align="right">3</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td align="right">65</td>
+                <td>LGA775</td>
+            </tr>
+            <tr>
+                <td>酷睿2 E8600</td>
+                <td>Core 2</td>
+                <td align="right">45</td>
+                <td>2/2</td>
+                <td align="right">3.33</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td align="right">65</td>
+                <td>LGA775</td>
+            </tr>
+            <tr>
+                <td>酷睿2 Q8300</td>
+                <td>Core 2</td>
+                <td align="right">45</td>
+                <td>4/4</td>
+                <td align="right">2.5</td>
+                <td>N/A</td>
+                <td align="right">4</td>
+                <td>N/A</td>
+                <td align="right">95</td>
+                <td>LGA775</td>
+            </tr>
+            <tr>
+                <td>酷睿2 Q8400</td>
+                <td>Core 2</td>
+                <td align="right">45</td>
+                <td>4/4</td>
+                <td align="right">2.66</td>
+                <td>N/A</td>
+                <td align="right">4</td>
+                <td>N/A</td>
+                <td align="right">95</td>
+                <td>LGA775</td>
+            </tr>
+            <tr>
+                <td>酷睿2 Q9450</td>
+                <td>Core 2</td>
+                <td align="right">45</td>
+                <td>4/4</td>
+                <td align="right">2.66</td>
+                <td>N/A</td>
+                <td align="right">12</td>
+                <td>N/A</td>
+                <td align="right">95</td>
+                <td>LGA775</td>
+            </tr>
+            <tr>
+                <td>酷睿2 Q9550</td>
+                <td>Core 2</td>
+                <td align="right">45</td>
+                <td>4/4</td>
+                <td align="right">2.83</td>
+                <td>N/A</td>
+                <td align="right">12</td>
+                <td>N/A</td>
+                <td align="right">95</td>
+                <td>LGA775</td>
+            </tr>
+            <tr>
+                <td>酷睿2 Q9770</td>
+                <td>Core 2</td>
+                <td align="right">45</td>
+                <td>4/4</td>
+                <td align="right">3.2</td>
+                <td>N/A</td>
+                <td align="right">12</td>
+                <td>N/A</td>
+                <td align="right">95</td>
+                <td>LGA775</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="./parseTable.js"></script>
+    <script>
+        var table = document.querySelector("table");
+        var output = document.querySelector("pre");
+        var data = parseTable(table);
+        console.log(JSON.stringify(data, null, 2))
+    </script>
+</body>
+
+</html>

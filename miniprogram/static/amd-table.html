@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>parseTable</title>
+</head>
+
+<body>
+    <table width="100%" border="0" cellpadding="1" cellspacing="1">
+        <thead>
+            <tr class="font_16 font_center font_bold color_blue">
+                <td bgcolor="#D0E8FD">处理器型号</td>
+                <td bgcolor="#D0E8FD">核心架构</td>
+                <td valign="middle" bgcolor="#D0E8FD">制造工艺(nm)</td>
+                <td bgcolor="#D0E8FD">核心/线程</td>
+                <td bgcolor="#D0E8FD">核心频率（GHz）</td>
+                <td valign="middle" bgcolor="#D0E8FD">加速频率（GHz）</td>
+                <td bgcolor="#D0E8FD">三级缓存（MB）</td>
+                <td bgcolor="#D0E8FD">核显</td>
+                <td align="center" bgcolor="#D0E8FD">热设计功耗（W）</td>
+                <td bgcolor="#D0E8FD">插槽</td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr class="tr1">
+          <td colspan="10"><strong>锐龙3000系列</strong><a name="ryzen3" id="Trinity11"></a></td>
+        </tr>
+        <tr>
+          <td>锐龙ThreadRipper 3990X</td>
+          <td>Zen 2</td>
+          <td>7nm</td>
+          <td>64/128</td>
+          <td align="right">&nbsp;</td>
+          <td align="right">&nbsp;</td>
+          <td>32/256</td>
+          <td>NA</td>
+          <td align="right">280</td>
+          <td>sRTX4</td>
+          </tr>
+        <tr>
+          <td>锐龙ThreadRipper 3970X</td>
+          <td>Zen 2</td>
+          <td>7nm</td>
+          <td>32/64</td>
+          <td align="right">3.7</td>
+          <td align="right">4.5</td>
+          <td>16/128</td>
+          <td>NA</td>
+          <td align="right">280</td>
+          <td>sRTX4</td>
+          </tr>
+        <tr>
+          <td>锐龙ThreadRipper 3960X</td>
+          <td>Zen 2</td>
+          <td>7nm</td>
+          <td>24/48</td>
+          <td align="right">3.8</td>
+          <td align="right">4.5</td>
+          <td>12/128</td>
+          <td>NA</td>
+          <td align="right">280</td>
+          <td>sRTX4</td>
+        </tr>
+        <tr>
+          <td>锐龙9 3950X</td>
+          <td>Zen 2</td>
+          <td>7nm</td>
+          <td>16/32</td>
+          <td align="right">3.5</td>
+          <td align="right">4.7</td>
+          <td>8/64</td>
+          <td>NA</td>
+          <td align="right">105</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙9 3900X</td>
+          <td>Zen 2</td>
+          <td>7nm</td>
+          <td>12/24</td>
+          <td align="right">3.8</td>
+          <td align="right">4.6</td>
+          <td>6/64</td>
+          <td>NA</td>
+          <td align="right">105</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙9 3900</td>
+          <td>Zen 2</td>
+          <td>7nm </td>
+          <td>12/24</td>
+          <td align="right">3.1</td>
+          <td align="right">4.3</td>
+          <td>6/64</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙7 3800X</td>
+          <td>Zen 2</td>
+          <td>7nm</td>
+          <td>8/16</td>
+          <td align="right">3.9</td>
+          <td align="right">4.5</td>
+          <td>4/32</td>
+          <td>NA</td>
+          <td align="right">105</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙7 3700X</td>
+          <td>Zen 2</td>
+          <td>7nm</td>
+          <td>8/16</td>
+          <td align="right">3.6</td>
+          <td align="right">4.4</td>
+          <td>4/32</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙7 3700</td>
+          <td>Zen 2</td>
+          <td>7nm</td>
+          <td>8/16</td>
+          <td align="right">3.6</td>
+          <td align="right">4.3</td>
+          <td>4/32</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙5 3600X</td>
+          <td>Zen 2</td>
+          <td>7nm</td>
+          <td>6/12</td>
+          <td align="right">3.8</td>
+          <td align="right">4.4</td>
+          <td>3/32</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙5 3600</td>
+          <td>Zen 2</td>
+          <td>7nm</td>
+          <td>6/12</td>
+          <td align="right">3.6</td>
+          <td align="right">4.2</td>
+          <td>3/32</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙5 3500X</td>
+          <td>Zen 2</td>
+          <td>7nm</td>
+          <td>6/6</td>
+          <td>3.6</td>
+          <td>4.1</td>
+          <td>3/32</td>
+          <td>NA</td>
+          <td>65</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙5 3500</td>
+          <td>Zen 2</td>
+          <td>7nm</td>
+          <td>6/6</td>
+          <td>3.6</td>
+          <td>4.1</td>
+          <td>3/16</td>
+          <td>NA</td>
+          <td>65</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙5 3400G</td>
+          <td>Zen+</td>
+          <td>12nm</td>
+          <td>4/8</td>
+          <td>3.7</td>
+          <td>4.2</td>
+          <td>4/8</td>
+          <td>Vega 11 1400MHz</td>
+          <td>65</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙5 3200G</td>
+          <td>Zen+</td>
+          <td>12nm</td>
+          <td>4/4</td>
+          <td>3.6</td>
+          <td>4.0</td>
+          <td>4/4</td>
+          <td>Vega 8 1250MHz</td>
+          <td>65</td>
+          <td>AM4</td>
+        </tr>
+        <tr class="tr1">
+          <td colspan="10"><strong>锐龙2000系列</strong><a name="ryzen2" id="Trinity4"></a></td>
+        </tr>
+        <tr>
+          <td>锐龙ThreadRipper 2990WX</td>
+          <td>Zen+</td>
+          <td>12nm</td>
+          <td>32/64</td>
+          <td align="right">3.0</td>
+          <td align="right">4.2</td>
+          <td>16/64</td>
+          <td>NA</td>
+          <td align="right">250</td>
+          <td>TR4</td>
+        </tr>
+        <tr>
+          <td>锐龙ThreadRipper 2970WX</td>
+          <td>Zen+</td>
+          <td>12nm</td>
+          <td>24/48</td>
+          <td align="right">3.0</td>
+          <td align="right">4.2</td>
+          <td>12/64</td>
+          <td>NA</td>
+          <td align="right">250</td>
+          <td>TR4</td>
+        </tr>
+        <tr>
+          <td>锐龙ThreadRipper 2950X</td>
+          <td>Zen+</td>
+          <td>12nm</td>
+          <td>16/32</td>
+          <td align="right">3.5</td>
+          <td align="right">4.4</td>
+          <td>8/32</td>
+          <td>NA</td>
+          <td align="right">180</td>
+          <td>TR4</td>
+        </tr>
+        <tr>
+          <td>锐龙ThreadRipper 2920X</td>
+          <td>Zen+</td>
+          <td>12nm</td>
+          <td>12/24</td>
+          <td align="right">3.5</td>
+          <td align="right">4.3</td>
+          <td>6/32</td>
+          <td>NA</td>
+          <td align="right">180</td>
+          <td>TR4</td>
+        </tr>
+        <tr>
+          <td>锐龙7 2700X</td>
+          <td>Zen+</td>
+          <td>12nm</td>
+          <td>8/16</td>
+          <td align="right">3.7</td>
+          <td align="right">4.3</td>
+          <td>4/16</td>
+          <td>NA</td>
+          <td align="right">105</td>
+          <td>AM4</td>
+          </tr>
+        <tr>
+          <td>锐龙7 2700</td>
+          <td>Zen+</td>
+          <td>12nm</td>
+          <td>8/16</td>
+          <td align="right">3.2</td>
+          <td align="right">4.1</td>
+          <td>4/16</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+          </tr>
+        <tr>
+          <td>锐龙7 2700E</td>
+          <td>Zen+</td>
+          <td>12nm</td>
+          <td>8/16</td>
+          <td align="right">2.8</td>
+          <td align="right">4.0</td>
+          <td>4/16</td>
+          <td>NA</td>
+          <td align="right">45</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙5 2600X</td>
+          <td>Zen+</td>
+          <td>12nm</td>
+          <td>6/12</td>
+          <td align="right">3.6</td>
+          <td align="right">4.2</td>
+          <td>3/16</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM4</td>
+          </tr>
+        <tr>
+          <td>锐龙5 2600</td>
+          <td>Zen+</td>
+          <td>12nm</td>
+          <td>6/12</td>
+          <td align="right">3.4</td>
+          <td align="right">3.9</td>
+          <td>3/16</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+          </tr>
+        <tr>
+          <td>锐龙5 2600E</td>
+          <td>Zen+</td>
+          <td>12nm</td>
+          <td>6/12</td>
+          <td align="right">3.1</td>
+          <td align="right">4.0</td>
+          <td>3/16</td>
+          <td>NA</td>
+          <td align="right">45</td>
+          <td>AM4</td>
+          </tr>
+        <tr>
+          <td>锐龙5 2500X</td>
+          <td>Zen+</td>
+          <td>12nm</td>
+          <td>4/8</td>
+          <td align="right">3.6</td>
+          <td align="right">4.0</td>
+          <td>2/8</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+          </tr>
+        <tr>
+          <td>锐龙3 2300X</td>
+          <td>Zen+</td>
+          <td>12nm</td>
+          <td>4/4</td>
+          <td align="right">3.5</td>
+          <td align="right">3.7</td>
+          <td>2/8</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+          </tr>
+        <tr>
+          <td>锐龙5 2400G</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>4/8</td>
+          <td align="right">3.6</td>
+          <td align="right">3.9</td>
+          <td>2/4</td>
+          <td>Vega 11 1250MHz</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+          </tr>
+        <tr>
+          <td>锐龙3 2200G</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>4/4</td>
+          <td align="right">3.5</td>
+          <td align="right">3.7</td>
+          <td>2/4</td>
+          <td>Vega 8 1100MHz</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+          </tr>
+        <tr>
+          <td>锐龙5 2400GE</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>4/8</td>
+          <td align="right">3.2</td>
+          <td align="right">3.8</td>
+          <td>2/4</td>
+          <td>Vega 11 1250MHz</td>
+          <td align="right">35</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙3 2200GE</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>4/4</td>
+          <td align="right">3.2</td>
+          <td align="right">3.6</td>
+          <td>2/4</td>
+          <td>Vega 8 1100MHz</td>
+          <td align="right">35</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>速龙240GE</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>2/4</td>
+          <td>3.5</td>
+          <td>NA</td>
+          <td>2/3</td>
+          <td>Vega 3 1000MHz</td>
+          <td>35</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>速龙220GE</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>2/4</td>
+          <td>3.4</td>
+          <td>NA</td>
+          <td>2/3</td>
+          <td>Vega 3 1000MHz</td>
+          <td>35</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>速龙200GE</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>2/4</td>
+          <td>3.2</td>
+          <td>NA</td>
+          <td>2/3</td>
+          <td>Vega 3 1000MHz</td>
+          <td>35</td>
+          <td>AM4</td>
+        </tr>
+        <tr class="tr1">
+          <td colspan="10"><strong>锐龙1000系列</strong><a name="ryzen" id="Trinity5"></a></td>
+        </tr>
+        <tr>
+          <td>锐龙ThreadRipper 1950X</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>16/32</td>
+          <td align="right">3.4</td>
+          <td align="right">4.2</td>
+          <td>8/32</td>
+          <td>NA</td>
+          <td align="right">180</td>
+          <td>TR4</td>
+        </tr>
+        <tr>
+          <td>锐龙ThreadRipper 1920X</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>12/24</td>
+          <td align="right">3.5</td>
+          <td align="right">4.2</td>
+          <td>6/32</td>
+          <td>NA</td>
+          <td align="right">180</td>
+          <td>TR4</td>
+        </tr>
+        <tr>
+          <td>锐龙ThreadRipper 1900X</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>8/16</td>
+          <td align="right">3.8</td>
+          <td align="right">4.2</td>
+          <td>4/16</td>
+          <td>NA</td>
+          <td align="right">180</td>
+          <td>TR4</td>
+        </tr>
+        <tr>
+          <td>锐龙7 1800X</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>8/16</td>
+          <td align="right">3.6</td>
+          <td align="right">4.0</td>
+          <td>4/16</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙7 1700X</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>8/16</td>
+          <td align="right">3.4</td>
+          <td align="right">3.8</td>
+          <td>4/16</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙7 1700</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>8/16</td>
+          <td align="right">3.0</td>
+          <td align="right">3.7</td>
+          <td>4/16</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙5 1600X</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>6/12</td>
+          <td align="right">3.6</td>
+          <td align="right">4.0</td>
+          <td>3/12</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙5 1600</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>6/12</td>
+          <td align="right">3.2</td>
+          <td align="right">3.6</td>
+          <td>3/12</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙5 1500X</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>4/8</td>
+          <td align="right">3.5</td>
+          <td align="right">3.7</td>
+          <td>2/8</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙5 1400</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>4/8</td>
+          <td align="right">3.2</td>
+          <td align="right">3.4</td>
+          <td>2/8</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙3 1300X</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>4/4</td>
+          <td align="right">3.4</td>
+          <td align="right">3.7</td>
+          <td>2/8</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>锐龙3 1200</td>
+          <td>Zen</td>
+          <td>14nm</td>
+          <td>4/4</td>
+          <td align="right">3.1</td>
+          <td align="right">3.4</td>
+          <td>2/8</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+        </tr>
+        <tr class="tr1">
+          <td colspan="10"><strong>Bristol Ridge APU系列</strong><a name="bristolrideg" id="Trinity"></a></td>
+        </tr>
+        <tr>
+          <td>A12-9800</td>
+          <td>Bristol Ridge</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.8</td>
+          <td align="right">4.2</td>
+          <td>4</td>
+          <td>Radeon R7 512SP 1108MHz</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>A12-9800E</td>
+          <td>Bristol Ridge</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.1</td>
+          <td align="right">3.8</td>
+          <td>4</td>
+          <td>Radeon R7 512SP 900MHz</td>
+          <td align="right">35</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>A10-9700</td>
+          <td>Bristol Ridge</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.5</td>
+          <td align="right">3.8</td>
+          <td>4</td>
+          <td>Radeon R7 384SP 1029MHz</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>A10-9700E</td>
+          <td>Bristol Ridge</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.0</td>
+          <td align="right">3.5</td>
+          <td>4</td>
+          <td>Radeon R7 384SP 847MHz</td>
+          <td align="right">35</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>A8-9600</td>
+          <td>Bristol Ridge</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.1</td>
+          <td align="right">3.4</td>
+          <td>4</td>
+          <td>Radeon R7 384SP 900MHz</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>A6-9500</td>
+          <td>Bristol Ridge</td>
+          <td>28nm</td>
+          <td>2/2</td>
+          <td align="right">3.5</td>
+          <td align="right">3.8</td>
+          <td>1</td>
+          <td>Radeon R5 384SP 1029MHz</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>A6-9500E</td>
+          <td>Bristol Ridge</td>
+          <td>28nm</td>
+          <td>2/2</td>
+          <td align="right">3.0</td>
+          <td align="right">3.4</td>
+          <td>1</td>
+          <td>Radeon R5 256SP 800MHz</td>
+          <td align="right">35</td>
+          <td>AM4</td>
+        </tr>
+        <tr>
+          <td>速龙X4 950</td>
+          <td>Bristol Ridge</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.5</td>
+          <td align="right">3.8</td>
+          <td>4</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM4</td>
+        </tr>
+        <tr class="tr1">
+          <td colspan="10"><strong>Godavari APU系列</strong><a name="godavari" id="Trinity2"></a></td>
+        </tr>
+        <tr>
+          <td>A6-7400K</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>2/2</td>
+          <td align="right">3.5</td>
+          <td align="right">3.9</td>
+          <td>1</td>
+          <td>Radeon R5 256SP</td>
+          <td align="right">65/45</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td>A6-7470K</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>2/2</td>
+          <td align="right">3.7</td>
+          <td align="right">4.0</td>
+          <td>1</td>
+          <td>Radeon R5 256SP</td>
+          <td align="right">65</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td>A6-7480</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>2/2</td>
+          <td align="right">3.5</td>
+          <td align="right">3.8</td>
+          <td>1</td>
+          <td>Radeon R5 256SP</td>
+          <td align="right">45</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td>A8-7600</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.1</td>
+          <td align="right">3.8</td>
+          <td>4</td>
+          <td>Radeon R7 384SP</td>
+          <td align="right">65/45</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td>A8-7650K</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.3</td>
+          <td align="right">3.8</td>
+          <td>4</td>
+          <td>Radeon R7 384SP</td>
+          <td align="right">95</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td>A8-7670K</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.6</td>
+          <td align="right">3.9</td>
+          <td>4</td>
+          <td>Radeon R7 384SP</td>
+          <td align="right">95</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td>A8-7680</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.5</td>
+          <td align="right">3.8</td>
+          <td>4</td>
+          <td>Radeon R7 384SP</td>
+          <td align="right">45</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td>A10-7700K</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.4</td>
+          <td align="right">3.8</td>
+          <td>4</td>
+          <td>Radeon R7 384SP</td>
+          <td align="right">95</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td>A10-7800</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.5</td>
+          <td align="right">3.9</td>
+          <td>4</td>
+          <td>Radeon R7 512SP</td>
+          <td align="right">65/45</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td> A10-7850K</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.7</td>
+          <td align="right">4.0</td>
+          <td>4</td>
+          <td>Radeon R7 512SP</td>
+          <td align="right">95</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td>A10-7860K</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.6</td>
+          <td align="right">4.0</td>
+          <td>4</td>
+          <td>Radeon R7 512SP</td>
+          <td align="right">45-65</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td>A10-7870K</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.9</td>
+          <td align="right">4.1</td>
+          <td>4</td>
+          <td>Radeon R7 512SP</td>
+          <td align="right">95</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td>A10-7890K</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">4.1</td>
+          <td align="right">4.3</td>
+          <td>4</td>
+          <td>Radeon R7 512SP</td>
+          <td align="right">95</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td>速龙X4 840</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.1</td>
+          <td align="right">3.8</td>
+          <td>4</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td>速龙X4 845</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.5</td>
+          <td align="right">3.8</td>
+          <td>4</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td>速龙X4 860K</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.7</td>
+          <td align="right">4.0</td>
+          <td>4</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td>速龙X4 870K</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">3.9</td>
+          <td align="right">4.1</td>
+          <td>4</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>FM2+</td>
+        </tr>
+        <tr>
+          <td>速龙X4 880K</td>
+          <td>Godavari</td>
+          <td>28nm</td>
+          <td>4/4</td>
+          <td align="right">4.0</td>
+          <td align="right">4.2</td>
+          <td>4</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>FM2+</td>
+        </tr>
+        <tr class="tr1">
+          <td colspan="10"><strong>Trinity/Richland APU系列</strong><a name="trinity" id="Trinity3"></a></td>
+        </tr>
+        <tr>
+          <td>A4-5300</td>
+          <td>Trinity</td>
+          <td>32nm</td>
+          <td>2/2</td>
+          <td align="right">3.4</td>
+          <td align="right">3.6</td>
+          <td>1</td>
+          <td>HD 7480D</td>
+          <td align="right">65</td>
+          <td>FM2</td>
+        </tr>
+        <tr>
+          <td>A4-6300</td>
+          <td>Richland</td>
+          <td>32nm</td>
+          <td>2/2</td>
+          <td align="right">3.7</td>
+          <td align="right">3.9</td>
+          <td>1</td>
+          <td>HD 8370D</td>
+          <td align="right">65</td>
+          <td>FM2</td>
+        </tr>
+        <tr>
+          <td>A6-5400K</td>
+          <td>Trinity</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">3.6</td>
+          <td align="right">3.8</td>
+          <td>1</td>
+          <td>HD 7540D</td>
+          <td align="right">65</td>
+          <td>FM2</td>
+        </tr>
+        <tr>
+          <td>A6-6400K</td>
+          <td>Richland</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">3.9</td>
+          <td align="right">4.1</td>
+          <td>1</td>
+          <td>HD 8470D</td>
+          <td align="right">65</td>
+          <td>FM2</td>
+        </tr>
+        <tr>
+          <td>A8-5500</td>
+          <td>Trinity</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">3.2</td>
+          <td align="right">3.7</td>
+          <td>4</td>
+          <td>HD 7560D</td>
+          <td align="right">65</td>
+          <td>FM2</td>
+        </tr>
+        <tr>
+          <td>A8-5600K</td>
+          <td>Trinity</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">3.6</td>
+          <td align="right">3.9</td>
+          <td>4</td>
+          <td>HD 7560D</td>
+          <td align="right">100</td>
+          <td>FM2</td>
+        </tr>
+        <tr>
+          <td>A8-6600K</td>
+          <td>Richland</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">3.9</td>
+          <td align="right">4.1</td>
+          <td>4</td>
+          <td>HD 8570D</td>
+          <td align="right">100</td>
+          <td>FM2</td>
+        </tr>
+        <tr>
+          <td>A10-5700</td>
+          <td>Trinity</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">3.4</td>
+          <td align="right">4</td>
+          <td>4</td>
+          <td>HD 7660D</td>
+          <td align="right">65</td>
+          <td>FM2</td>
+        </tr>
+        <tr>
+          <td>A10-5800K</td>
+          <td>Trinity</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">3.8</td>
+          <td align="right">4.2</td>
+          <td>4</td>
+          <td>HD 7660D</td>
+          <td align="right">100</td>
+          <td>FM2</td>
+        </tr>
+        <tr>
+          <td>A10-6800K</td>
+          <td>Richland</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">4.1</td>
+          <td align="right">4.4</td>
+          <td>4</td>
+          <td>HD 8670D</td>
+          <td align="right">100</td>
+          <td>FM2</td>
+        </tr>
+        <tr>
+          <td>速龙X4 740</td>
+          <td>Richland</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">3.2</td>
+          <td align="right">3.7</td>
+          <td>4</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>FM2/FM2+</td>
+        </tr>
+        <tr>
+          <td>速龙X4 750</td>
+          <td>Richland</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">3.4</td>
+          <td align="right">3.9</td>
+          <td>4</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>FM2/FM2+</td>
+        </tr>
+        <tr>
+          <td>速龙X4 750K</td>
+          <td>Richland</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">3.4</td>
+          <td align="right">4.0</td>
+          <td>4</td>
+          <td>NA</td>
+          <td align="right">100</td>
+          <td>FM2/FM2+</td>
+        </tr>
+        <tr>
+          <td>速龙X4 760K</td>
+          <td>Richland</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">3.8</td>
+          <td align="right">4.1</td>
+          <td>4</td>
+          <td>NA</td>
+          <td align="right">100</td>
+          <td>FM2/FM2+</td>
+        </tr>
+        <tr class="tr1">
+          <td colspan="10"><strong>Llano APU系列</strong><a name="llano" id="Llano2"></a></td>
+        </tr>
+        <tr>
+          <td>A4-3300</td>
+          <td>Husky</td>
+          <td>32nm</td>
+          <td>2/2</td>
+          <td align="right">2.5</td>
+          <td>NA</td>
+          <td>1</td>
+          <td>HD 6410D</td>
+          <td align="right">65</td>
+          <td>FM1</td>
+        </tr>
+        <tr>
+          <td>A4-3400</td>
+          <td>Husky</td>
+          <td>32nm</td>
+          <td>2/2</td>
+          <td align="right">2.7</td>
+          <td>NA</td>
+          <td>1</td>
+          <td>HD 6410D</td>
+          <td align="right">65</td>
+          <td>FM1</td>
+        </tr>
+        <tr>
+          <td>A4-3420</td>
+          <td>Husky</td>
+          <td>32nm</td>
+          <td>2/2</td>
+          <td align="right">2.9</td>
+          <td>NA</td>
+          <td>1</td>
+          <td>HD 6410D</td>
+          <td align="right">65</td>
+          <td>FM1</td>
+        </tr>
+        <tr>
+          <td>A6-3600</td>
+          <td>Husky</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">2.1</td>
+          <td align="right">2.4</td>
+          <td>1</td>
+          <td>HD 6530D</td>
+          <td align="right">65</td>
+          <td>FM1</td>
+        </tr>
+        <tr>
+          <td>A6-3650</td>
+          <td>Husky</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">2.6</td>
+          <td>NA</td>
+          <td>1</td>
+          <td>HD 6530D</td>
+          <td align="right">100</td>
+          <td>FM1</td>
+        </tr>
+        <tr>
+          <td>A6-3670K</td>
+          <td>Husky</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">2.7</td>
+          <td>NA</td>
+          <td>1</td>
+          <td>HD 6530D</td>
+          <td align="right">100</td>
+          <td>FM1</td>
+        </tr>
+        <tr>
+          <td>A8-3800</td>
+          <td>Husky</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">2.4</td>
+          <td align="right">2.7</td>
+          <td>4</td>
+          <td>HD 6550D</td>
+          <td align="right">65</td>
+          <td>FM1</td>
+        </tr>
+        <tr>
+          <td>A8-3850</td>
+          <td>Husky</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">2.9</td>
+          <td>NA</td>
+          <td>4</td>
+          <td>HD 6550D</td>
+          <td align="right">100</td>
+          <td>FM1</td>
+        </tr>
+        <tr>
+          <td>A8-3870K</td>
+          <td>Husky</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">3</td>
+          <td>NA</td>
+          <td>4</td>
+          <td>HD 6550D</td>
+          <td align="right">100</td>
+          <td>FM1</td>
+        </tr>
+        <tr>
+          <td>速龙X4 631</td>
+          <td>Husky</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">2.6</td>
+          <td>NA</td>
+          <td>4</td>
+          <td>NA</td>
+          <td align="right">100</td>
+          <td>FM1</td>
+        </tr>
+        <tr>
+          <td>速龙X4 638</td>
+          <td>Husky</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">2.7</td>
+          <td>NA</td>
+          <td>4</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>FM1</td>
+        </tr>
+        <tr>
+          <td>速龙X4 641</td>
+          <td>Husky</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">2.8</td>
+          <td>NA</td>
+          <td>4</td>
+          <td>NA</td>
+          <td align="right">100</td>
+          <td>FM1</td>
+        </tr>
+        <tr>
+          <td>速龙X4 651</td>
+          <td>Husky</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">3</td>
+          <td>NA</td>
+          <td>4</td>
+          <td>NA</td>
+          <td align="right">100</td>
+          <td>FM1</td>
+        </tr>
+        <tr class="tr1">
+          <td colspan="10"><strong>打桩机系列</strong><a name="vishera" id="Vishera2"></a></td>
+        </tr>
+        <tr>
+          <td>FX-4300</td>
+          <td>Vishera</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">3.3</td>
+          <td align="right">4.0</td>
+          <td>4MB</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-4320</td>
+          <td>Vishera</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">4.0</td>
+          <td align="right">4.2</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-4350</td>
+          <td>Vishera</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">4.2</td>
+          <td align="right">4.3</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-6300</td>
+          <td>Vishera</td>
+          <td>32nm</td>
+          <td>6/6</td>
+          <td align="right">3.5</td>
+          <td align="right">4.1</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-6350</td>
+          <td>Vishera</td>
+          <td>32nm</td>
+          <td>6/6</td>
+          <td align="right">3.9</td>
+          <td align="right">4.2</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-8300</td>
+          <td>Vishera</td>
+          <td>32nm</td>
+          <td>8/8</td>
+          <td align="right">3.3</td>
+          <td align="right">3.9</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-8320E</td>
+          <td>Vishera</td>
+          <td>32nm</td>
+          <td>8/8</td>
+          <td align="right">3.2</td>
+          <td align="right">4.0</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-8320</td>
+          <td>Vishera</td>
+          <td>32nm</td>
+          <td>8/8</td>
+          <td align="right">3.5</td>
+          <td align="right">4.0</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-8350</td>
+          <td>Vishera</td>
+          <td>32nm</td>
+          <td>8/8</td>
+          <td align="right">4.0</td>
+          <td align="right">4.2</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-8370E</td>
+          <td>Vishera</td>
+          <td>32nm</td>
+          <td>8/8</td>
+          <td align="right">3.3</td>
+          <td align="right">4.3</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-8370</td>
+          <td>Vishera</td>
+          <td>32nm</td>
+          <td>8/8</td>
+          <td align="right">4.0</td>
+          <td align="right">4.3</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-9370</td>
+          <td>Vishera</td>
+          <td>32nm</td>
+          <td>8/8</td>
+          <td align="right">4.4</td>
+          <td align="right">4.7</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">220</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-9590</td>
+          <td>Vishera</td>
+          <td>32nm</td>
+          <td>8/8</td>
+          <td align="right">4.8</td>
+          <td align="right">5.0</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">220</td>
+          <td>AM3+</td>
+        </tr>
+        <tr class="tr1">
+          <td colspan="10"><strong>推土机系列</strong><a name="bulldozer" id="bulldozer2"></a></td>
+        </tr>
+        <tr>
+          <td>FX-4100</td>
+          <td>Bulldozer</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">3.6</td>
+          <td align="right">3.8</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-4130</td>
+          <td>Bulldozer</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">3.8</td>
+          <td align="right">3.9</td>
+          <td>4MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-4170</td>
+          <td>Bulldozer</td>
+          <td>32nm</td>
+          <td>4/4</td>
+          <td align="right">4.2</td>
+          <td align="right">4.3</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-6100</td>
+          <td>Bulldozer</td>
+          <td>32nm</td>
+          <td>6/6</td>
+          <td align="right">3.3</td>
+          <td align="right">3.9</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-6120</td>
+          <td>Bulldozer</td>
+          <td>32nm</td>
+          <td>6/6</td>
+          <td align="right">3.6</td>
+          <td align="right">4.2</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-6200</td>
+          <td>Bulldozer</td>
+          <td>32nm</td>
+          <td>6/6</td>
+          <td align="right">3.8</td>
+          <td align="right">4.1</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-8100</td>
+          <td>Bulldozer</td>
+          <td>32nm</td>
+          <td>8/8</td>
+          <td align="right">3.1</td>
+          <td align="right">3.7</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-8120</td>
+          <td>Bulldozer</td>
+          <td>32nm</td>
+          <td>8/8</td>
+          <td align="right">3.1</td>
+          <td align="right">4</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-8140</td>
+          <td>Bulldozer</td>
+          <td>32nm</td>
+          <td>8/8</td>
+          <td align="right">3.2</td>
+          <td align="right">4</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-8150</td>
+          <td>Bulldozer</td>
+          <td>32nm</td>
+          <td>8/8</td>
+          <td align="right">3.6</td>
+          <td align="right">4.2</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3+</td>
+        </tr>
+        <tr>
+          <td>FX-8170</td>
+          <td>Bulldozer</td>
+          <td>32nm</td>
+          <td>8/8</td>
+          <td align="right">3.8</td>
+          <td align="right">4.3</td>
+          <td>8MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3+</td>
+        </tr>
+        <tr class="tr1">
+          <td colspan="10"><strong>弈龙2系列</strong><a name="phenom" id="Phenom2"></a></td>
+        </tr>
+        <tr>
+          <td>弈龙2 X2    555</td>
+          <td>Callisto</td>
+          <td>45nm</td>
+          <td>2/2</td>
+          <td align="right">3.2</td>
+          <td>NA</td>
+          <td>6MB</td>
+          <td>NA</td>
+          <td align="right">80</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>弈龙2 X2 560</td>
+          <td>Callisto</td>
+          <td>45nm</td>
+          <td>2/2</td>
+          <td align="right">3.3</td>
+          <td>NA</td>
+          <td>6MB</td>
+          <td>NA</td>
+          <td align="right">80</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>弈龙X4 9750</td>
+          <td>K10</td>
+          <td>65nm</td>
+          <td>4/4</td>
+          <td align="right">2.4</td>
+          <td>NA</td>
+          <td>2MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM2+</td>
+        </tr>
+        <tr>
+          <td>弈龙2 X4 940</td>
+          <td>Deneb</td>
+          <td>45nm</td>
+          <td>4/4</td>
+          <td align="right">3.0</td>
+          <td>NA</td>
+          <td>6MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM2+</td>
+        </tr>
+        <tr>
+          <td>弈龙2 X4 955</td>
+          <td>Deneb</td>
+          <td>45nm</td>
+          <td>4/4</td>
+          <td align="right">3.2</td>
+          <td>NA</td>
+          <td>6MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>弈龙2 X4 965</td>
+          <td>Deneb</td>
+          <td>45nm</td>
+          <td>4/4</td>
+          <td align="right">3.4</td>
+          <td>NA</td>
+          <td>6MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>弈龙2 X4 970</td>
+          <td>Deneb</td>
+          <td>45nm</td>
+          <td>4/4</td>
+          <td align="right">3.5</td>
+          <td>NA</td>
+          <td>6MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>弈龙2 X4 975</td>
+          <td>Deneb</td>
+          <td>45nm</td>
+          <td>4/4</td>
+          <td align="right">3.6</td>
+          <td>NA</td>
+          <td>6MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>弈龙2 X4 980</td>
+          <td>Deneb</td>
+          <td>45nm</td>
+          <td>4/4</td>
+          <td align="right">3.7</td>
+          <td>NA</td>
+          <td>6MB</td>
+          <td>NA</td>
+          <td align="right">125</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>羿龙2 X6 1045T</td>
+          <td>Thuban</td>
+          <td>45nm</td>
+          <td>6/6</td>
+          <td align="right">2.7</td>
+          <td align="right">3.2</td>
+          <td>6MB</td>
+          <td>NA</td>
+          <td>95</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>弈龙2 X6 1055T</td>
+          <td>Thuban</td>
+          <td>45nm</td>
+          <td>6/6</td>
+          <td align="right">2.8</td>
+          <td align="right">3.3</td>
+          <td>6MB</td>
+          <td>NA</td>
+          <td>95</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>羿龙2 X6 1075T</td>
+          <td>Thunban</td>
+          <td>45nm</td>
+          <td>6/6</td>
+          <td align="right">3.0</td>
+          <td align="right">3.5</td>
+          <td>6MB</td>
+          <td>NA</td>
+          <td>95</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>弈龙2 X6 1090T</td>
+          <td>Thuban</td>
+          <td>45nm</td>
+          <td>6/6</td>
+          <td align="right">3.2</td>
+          <td align="right">3.6</td>
+          <td>6MB</td>
+          <td>NA</td>
+          <td>95/125</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>弈龙2 X6 1100T</td>
+          <td>Thuban</td>
+          <td>45nm</td>
+          <td>6/6</td>
+          <td align="right">3.3</td>
+          <td align="right">3.7</td>
+          <td>6MB</td>
+          <td>NA</td>
+          <td>125</td>
+          <td>AM3</td>
+        </tr>
+        <tr class="tr1" style="">
+          <td height="100" colspan="10"><strong>速龙2系列</strong><a name="athlon" id="athlon"></a></td>
+        </tr>
+        <tr>
+          <td width="130">速龙2 X2    210</td>
+          <td width="130">Regor</td>
+          <td width="130">45nm</td>
+          <td width="130">2/2</td>
+          <td width="130" align="right">2.6</td>
+          <td width="159">NA</td>
+          <td width="130">NA</td>
+          <td width="130">NA</td>
+          <td width="136" align="right">65</td>
+          <td width="136">AM3</td>
+        </tr>
+        <tr>
+          <td>速龙2 X2 215</td>
+          <td>Regor</td>
+          <td>45nm</td>
+          <td>2/2</td>
+          <td align="right">2.7</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>速龙2 X2 220</td>
+          <td>Regor</td>
+          <td>45nm</td>
+          <td>2/2</td>
+          <td align="right">2.8</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>速龙2 X2 245</td>
+          <td>Regor</td>
+          <td>45nm</td>
+          <td>2/2</td>
+          <td align="right">2.9</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>速龙2 X2 250</td>
+          <td>Regor</td>
+          <td>45nm</td>
+          <td>2/2</td>
+          <td align="right">3</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>速龙2 X2 255</td>
+          <td>Regor</td>
+          <td>45nm</td>
+          <td>2/2</td>
+          <td align="right">3.1</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>速龙2 X2 265</td>
+          <td>Regor</td>
+          <td>45nm</td>
+          <td>2/2</td>
+          <td align="right">3.2</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td align="right">65</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>速龙2 X3 435</td>
+          <td>Rana</td>
+          <td>45nm</td>
+          <td>3/3</td>
+          <td align="right">2.9</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>速龙2 X3 440</td>
+          <td>Rana</td>
+          <td>45nm</td>
+          <td>3/3</td>
+          <td align="right">3</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>速龙2 X3 450</td>
+          <td>Rana</td>
+          <td>45nm</td>
+          <td>3/3</td>
+          <td align="right">3.1</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>速龙2 X4 640</td>
+          <td>Propus</td>
+          <td>45nm</td>
+          <td>4/4</td>
+          <td align="right">3</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td>速龙2 X4 645</td>
+          <td>Propus</td>
+          <td>45nm</td>
+          <td>4/4</td>
+          <td align="right">3.1</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td align="right">95</td>
+          <td>AM3</td>
+        </tr>
+        <tr>
+          <td colspan="10">&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="./parseTable.js"></script>
+    <script>
+        var table = document.querySelector("table");
+        var output = document.querySelector("pre");
+        var data = parseTable(table);
+        console.log(JSON.stringify(data, null, 2))
+    </script>
+</body>
+
+</html>

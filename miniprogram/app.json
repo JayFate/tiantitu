@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/tianti/tianti",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f78d1d",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "云开发 QuickStart"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
