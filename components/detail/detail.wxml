@@ -1,0 +1,26 @@
+<scroll-view scroll-y="true" style="width: 100%;height: {{contentHeight}}" scroll-into-view="{{scrollId}}">
+  <view class="page">
+    <view class="page__hd">
+      <view class="page__title">{{types}}</view>
+      <view class="page__desc">桌面处理器规格表</view>
+    </view>
+    <view class="page__bd">
+      <view class="weui-form-preview" wx:for="{{table}}" wx:key="item" id="{{item[10][1]}}">
+        <view class="weui-form-preview__hd">
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__value_in-hd left">{{item[0][1]}}</view>
+          </view>
+        </view>
+        <view class="weui-form-preview__bd">
+          <view class="weui-form-preview__item" wx:for="{{table[index]}}" wx:for-item="itemName" wx:for-index="idx" wx:if="{{idx!==0}}" wx:key="itemName">
+            <view class="weui-form-preview__label">{{item[idx][0]}}</view>
+            <view class="weui-form-preview__value">{{item[idx][1]}}</view>
+          </view>
+        </view>
+        <view class="weui-form-preview__ft">
+          <navigator url="" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">操作</navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

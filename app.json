@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/tianti/tianti",
+    "pages/amd/amd",
+    "pages/intel/intel"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "CPUR",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "backgroundColor": "#EDEDED"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#1afa29",
+    "backgroundColor":"#EDEDED",                                                                                                                        
+    "list": [
+      {
+        "pagePath": "pages/tianti/tianti",
+        "iconPath":"/static/image/CPU.png",
+        "selectedIconPath":"/static/image/CPU-selected.png"
+      },
+      {
+        "pagePath": "pages/intel/intel",
+        "iconPath": "/static/image/Intel.png",
+        "selectedIconPath": "/static/image/Intel-selected.png"
+      },
+      {
+        "pagePath": "pages/amd/amd",
+        "iconPath": "/static/image/Amd.png",
+        "selectedIconPath": "/static/image/Amd-selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
